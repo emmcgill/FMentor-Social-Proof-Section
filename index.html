@@ -12,6 +12,14 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Frontend Mentor | Social proof section</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,36 +34,112 @@
     </style>
   </head>
   <body>
-    10,000+ of our users love our products.
+    <div id="pattern-top"></div>
+    <main>
+      <section class="top-section">
+        <div class="left-side">
+          <h1 class="title">10,000+ of our users love our products.</h1>
+          <p class="sub-title">
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
+        </div>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+        <div class="right-side">
+          <div class="rating" id="rating-one">
+            <div class="star-wrapper">
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+            </div>
+            <p id="reviews">Rated 5 Stars in Reviews</p>
+          </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+          <div class="rating" id="rating-two">
+            <div class="star-wrapper">
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+            </div>
+            <p id="report-guru">Rated 5 Stars in Report Guru</p>
+          </div>
+
+          <div class="rating" id="rating-three">
+            <div class="star-wrapper">
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+              <img class="star" src="images/icon-star.svg" alt="#" />
+            </div>
+            <p id="besttech">Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-section">
+        <div class="testimonial" id="testimonial-one">
+          <div class="buyer" id="colton">
+            <img src="images/image-colton.jpg" alt="Colton Smith" />
+            <div class="information">
+              <h2 class="name">Colton Smith</h2>
+              <p class="title">Verified Buyer</p>
+            </div>
+          </div>
+
+          <p class="testimony">
+            "We needed the same printed design as the one we had ordered a week
+            prior. Not only did they find the original order, but we also
+            received it in time. Excellent!"
+          </p>
+        </div>
+
+        <div class="testimonial" id="testimonial-two">
+          <div class="buyer" id="irene">
+            <img src="images/image-irene.jpg" alt="Irene Roberts" />
+            <div class="information">
+              <h2 class="name">Irene Roberts</h2>
+              <p class="title">Verified Buyer</p>
+            </div>
+          </div>
+
+          <p class="testimony">
+            "Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery."
+          </p>
+        </div>
+
+        <div class="testimonial" id="testimonial-three">
+          <div class="buyer" id="anne">
+            <img src="images/image-anne.jpg" alt="Anne Wallace" />
+            <div class="information">
+              <h2 class="name">Anne Wallace</h2>
+              <p class="title">Verified Buyer</p>
+            </div>
+          </div>
+
+          <p class="testimony">
+            "Put an order with this company and can only praise them for the
+            very high standard. Will definitely use them again and recommend
+            them to everyone!"
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Erik McGill</a>.
+      </div>
+    </footer>
   </body>
 </html>
